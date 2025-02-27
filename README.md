@@ -2,6 +2,8 @@
 
 This Assistant processes company documents and provides precise answers with citations. It supports PDFs, text files, Word, and Excel, extracting content and storing vector embeddings in ChromaDB for efficient retrieval. When a user asks a question, it performs a similarity search, retrieves the most relevant snippets, and ensures responses are grounded in documented sources.
 
+If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
+
 ## How It Works
 
 1️⃣ Document Ingestion & Embedding (One-Time Process)
