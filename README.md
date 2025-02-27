@@ -1,5 +1,7 @@
 # Custom GPT based on LangGraph with Search and Summarization Tools
 
+This Assistant processes company documents and provides precise answers with citations. It supports PDFs, text files, Word, and Excel, extracting content and storing vector embeddings in ChromaDB for efficient retrieval. When a user asks a question, it performs a similarity search, retrieves the most relevant snippets, and ensures responses are grounded in documented sources.
+
 ## How It Works
 
 1️⃣ Document Ingestion & Embedding (One-Time Process)
