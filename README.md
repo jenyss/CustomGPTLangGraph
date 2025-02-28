@@ -10,8 +10,24 @@ If you have any questions or would like to collaborate, feel free to reach out t
 
 📂 **Supported Formats**: PDF, TXT, DOC, DOCX, XLS, XLSX  
 * Extracts text from documents while preserving metadata (e.g., source, page number).  
-* Splits text into chunks using **RecursiveCharacterTextSplitter** (supports various separators).  
-* Converts text chunks into vector embeddings using **OpenAI’s text-embedding-3-large** model.  
+* Splits text into chunks using **RecursiveCharacterTextSplitter** or **SemanticChunker**. You must select which one to use by commenting/uncommenting the ```splitter``` in the code.
+
+<code block>
+  # Define recursive text splitter
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1500,
+    chunk_overlap=150,
+    separators=["\n\n\n", "\n\n", "\n", ". ", " ", ""]
+)
+
+# Define semantic text splitter
+# splitter = SemanticChunker(
+#     embeddings=OpenAIEmbeddings(),
+#     breakpoint_threshold_type="percentile",  # Method to determine breakpoints
+#     breakpoint_threshold_amount=85.0  # Threshold value
+# )
+</code block>
+* Converts text chunks into vector embeddings using **OpenAI’s text-embedding-3-large** model. You can define the size a of the embeddings and make them s
 * Stores embeddings in **ChromaDB**, ensuring documents are easily searchable.  
 
 2️⃣ Query Processing (Every Time a User Asks a Question)
