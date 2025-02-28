@@ -13,12 +13,12 @@ If you have any questions or would like to collaborate, feel free to reach out t
 * Splits text into chunks using **RecursiveCharacterTextSplitter** or **SemanticChunker**. You must select which one to use by commenting/uncommenting the ```splitter``` in the code.
 
 <code block>
-  # Define recursive text splitter
+# Define recursive text splitter
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=1500,
     chunk_overlap=150,
     separators=["\n\n\n", "\n\n", "\n", ". ", " ", ""]
-)
+)</code>
 
 # Define semantic text splitter
 # splitter = SemanticChunker(
