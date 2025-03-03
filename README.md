@@ -6,6 +6,8 @@ If you have any questions or would like to collaborate, feel free to reach out t
 
 ## How It Works
 
+**At the beginning, there is code to (re)initialize Chroma DB. This is only necessary if you are experimenting with different ways of splitting documents, as you must clean the database before creating new embeddings to avoid duplications and other issues. If you are not planning to experiment with splitting and embedding, you only need to initialize the database once, and after that, you can skip executing the cell!**
+
 1️⃣ Document Ingestion & Embedding (One-Time Process)
 
 📂 **Supported Formats**: PDF, TXT, DOC, DOCX, XLS, XLSX  
