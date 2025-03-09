@@ -73,9 +73,3 @@ Ensure that ```<PROJECT_FOLDER>``` is accessible in JupyterLab by setting it as 
 ### Step 3: Run the Jupyter Notebook
 
 To execute the notebook, select each cell and press ```Shift + Enter```.
-
-1. **Reference:** N70D253G14B
-**Description:** In-Finity 70 mm section - Black - Suspended (light down) - 2530 mm straight element - 3.000 K CRI 80 - Reflector General Lighting - Not dimmable
-**Product Finish:** Black
-**Dimensions:** 2530 mm
-**Price:** 1.139,00 €
